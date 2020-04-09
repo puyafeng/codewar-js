@@ -7,19 +7,11 @@ function maskfy11(str=""){
     return "#".repeat(length-4>0?length-4:0).concat(str.slice(-4));
 }
 
-/**
- * 执行10000000次，0.8秒左右
- * @param {*} str 
- */
 function maskfy12(str=""){
     let length = str.length;
     return "#".repeat(Math.max(0,length-4)).concat(str.slice(-4));
 }
 
-/**
- * 执行10000000次，0.8秒左右
- * @param {*} str 
- */
 function maskfy13(str=""){
     return "#".repeat(str.slice(0,-4).length).concat(str.slice(-4));
 }
